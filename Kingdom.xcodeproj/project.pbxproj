@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F52B78D71ABC91AF00750222 /* KDQuestDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B78D61ABC91AF00750222 /* KDQuestDetailsTableViewCell.m */; };
+		F52B78DC1ABC96AF00750222 /* KDActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B78DA1ABC96AF00750222 /* KDActivityView.m */; };
+		F52B78DD1ABC96AF00750222 /* KDActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F52B78DB1ABC96AF00750222 /* KDActivityView.xib */; };
+		F52B78E01ABC9A8B00750222 /* KDUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = F52B78DF1ABC9A8B00750222 /* KDUserDefaults.m */; };
+		F54635611ABB35DB00021205 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635601ABB35DB00021205 /* main.m */; };
+		F54635641ABB35DB00021205 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635631ABB35DB00021205 /* AppDelegate.m */; };
+		F54635671ABB35DB00021205 /* KDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635661ABB35DB00021205 /* KDLoginViewController.m */; };
+		F546356A1ABB35DB00021205 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54635681ABB35DB00021205 /* Main.storyboard */; };
+		F546356C1ABB35DB00021205 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F546356B1ABB35DB00021205 /* Images.xcassets */; };
+		F546356F1ABB35DB00021205 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F546356D1ABB35DB00021205 /* LaunchScreen.xib */; };
+		F546357B1ABB35DB00021205 /* KingdomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F546357A1ABB35DB00021205 /* KingdomTests.m */; };
+		F54635861ABB396E00021205 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F54635851ABB396E00021205 /* logo.png */; };
+		F54635891ABB418E00021205 /* KDKingdomListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635881ABB418E00021205 /* KDKingdomListViewController.m */; };
+		F546358C1ABB41D700021205 /* KDKingdomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F546358B1ABB41D700021205 /* KDKingdomTableViewCell.m */; };
+		F54635B41ABB431E00021205 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635901ABB431E00021205 /* AFHTTPRequestOperation.m */; };
+		F54635B51ABB431E00021205 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635921ABB431E00021205 /* AFHTTPRequestOperationManager.m */; };
+		F54635B61ABB431E00021205 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635941ABB431E00021205 /* AFHTTPSessionManager.m */; };
+		F54635B71ABB431E00021205 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635971ABB431E00021205 /* AFNetworkReachabilityManager.m */; };
+		F54635B81ABB431E00021205 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635991ABB431E00021205 /* AFSecurityPolicy.m */; };
+		F54635B91ABB431E00021205 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F546359B1ABB431E00021205 /* AFURLConnectionOperation.m */; };
+		F54635BA1ABB431E00021205 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F546359D1ABB431E00021205 /* AFURLRequestSerialization.m */; };
+		F54635BB1ABB431E00021205 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F546359F1ABB431E00021205 /* AFURLResponseSerialization.m */; };
+		F54635BC1ABB431E00021205 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635A11ABB431E00021205 /* AFURLSessionManager.m */; };
+		F54635BD1ABB431E00021205 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635A41ABB431E00021205 /* AFNetworkActivityIndicatorManager.m */; };
+		F54635BE1ABB431E00021205 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635A61ABB431E00021205 /* UIActivityIndicatorView+AFNetworking.m */; };
+		F54635BF1ABB431E00021205 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635A81ABB431E00021205 /* UIAlertView+AFNetworking.m */; };
+		F54635C01ABB431E00021205 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635AA1ABB431E00021205 /* UIButton+AFNetworking.m */; };
+		F54635C11ABB431E00021205 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635AC1ABB431E00021205 /* UIImageView+AFNetworking.m */; };
+		F54635C21ABB431E00021205 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635AF1ABB431E00021205 /* UIProgressView+AFNetworking.m */; };
+		F54635C31ABB431E00021205 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635B11ABB431E00021205 /* UIRefreshControl+AFNetworking.m */; };
+		F54635C41ABB431E00021205 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635B31ABB431E00021205 /* UIWebView+AFNetworking.m */; };
+		F54635C81ABB449D00021205 /* KDConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635C71ABB449D00021205 /* KDConstants.m */; };
+		F54635CE1ABB452C00021205 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635CD1ABB452C00021205 /* NSString+Extensions.m */; };
+		F54635D21ABB46B400021205 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F54635D11ABB46B400021205 /* AsyncImageView.m */; };
+		F5FE58ED1ABB50E2001AC11F /* KDKingdomDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FE58EC1ABB50E2001AC11F /* KDKingdomDetailsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F54635751ABB35DB00021205 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F54635531ABB35DB00021205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F546355A1ABB35DB00021205;
+			remoteInfo = Kingdom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F52B78D51ABC91AF00750222 /* KDQuestDetailsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDQuestDetailsTableViewCell.h; path = "View Controllers/Kingdom Details/KDQuestDetailsTableViewCell.h"; sourceTree = "<group>"; };
+		F52B78D61ABC91AF00750222 /* KDQuestDetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDQuestDetailsTableViewCell.m; path = "View Controllers/Kingdom Details/KDQuestDetailsTableViewCell.m"; sourceTree = "<group>"; };
+		F52B78D91ABC96AF00750222 /* KDActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDActivityView.h; sourceTree = "<group>"; };
+		F52B78DA1ABC96AF00750222 /* KDActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDActivityView.m; sourceTree = "<group>"; };
+		F52B78DB1ABC96AF00750222 /* KDActivityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KDActivityView.xib; sourceTree = "<group>"; };
+		F52B78DE1ABC9A8B00750222 /* KDUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDUserDefaults.h; path = "Utilities/User Defaults/KDUserDefaults.h"; sourceTree = "<group>"; };
+		F52B78DF1ABC9A8B00750222 /* KDUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDUserDefaults.m; path = "Utilities/User Defaults/KDUserDefaults.m"; sourceTree = "<group>"; };
+		F546355B1ABB35DB00021205 /* Kingdom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kingdom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F546355F1ABB35DB00021205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F54635601ABB35DB00021205 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F54635621ABB35DB00021205 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F54635631ABB35DB00021205 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F54635651ABB35DB00021205 /* KDLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDLoginViewController.h; sourceTree = "<group>"; };
+		F54635661ABB35DB00021205 /* KDLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KDLoginViewController.m; sourceTree = "<group>"; };
+		F54635691ABB35DB00021205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F546356B1ABB35DB00021205 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F546356E1ABB35DB00021205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F54635741ABB35DB00021205 /* KingdomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KingdomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54635791ABB35DB00021205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F546357A1ABB35DB00021205 /* KingdomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KingdomTests.m; sourceTree = "<group>"; };
+		F54635851ABB396E00021205 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		F54635871ABB418E00021205 /* KDKingdomListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDKingdomListViewController.h; path = "View Controllers/Kingdom List/KDKingdomListViewController.h"; sourceTree = "<group>"; };
+		F54635881ABB418E00021205 /* KDKingdomListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDKingdomListViewController.m; path = "View Controllers/Kingdom List/KDKingdomListViewController.m"; sourceTree = "<group>"; };
+		F546358A1ABB41D700021205 /* KDKingdomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDKingdomTableViewCell.h; path = "View Controllers/Kingdom List/KDKingdomTableViewCell.h"; sourceTree = "<group>"; };
+		F546358B1ABB41D700021205 /* KDKingdomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDKingdomTableViewCell.m; path = "View Controllers/Kingdom List/KDKingdomTableViewCell.m"; sourceTree = "<group>"; };
+		F546358F1ABB431E00021205 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		F54635901ABB431E00021205 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		F54635911ABB431E00021205 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		F54635921ABB431E00021205 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		F54635931ABB431E00021205 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		F54635941ABB431E00021205 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		F54635951ABB431E00021205 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		F54635961ABB431E00021205 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		F54635971ABB431E00021205 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		F54635981ABB431E00021205 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		F54635991ABB431E00021205 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		F546359A1ABB431E00021205 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		F546359B1ABB431E00021205 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		F546359C1ABB431E00021205 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		F546359D1ABB431E00021205 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		F546359E1ABB431E00021205 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		F546359F1ABB431E00021205 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		F54635A01ABB431E00021205 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		F54635A11ABB431E00021205 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		F54635A31ABB431E00021205 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		F54635A41ABB431E00021205 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		F54635A51ABB431E00021205 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		F54635A61ABB431E00021205 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		F54635A71ABB431E00021205 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		F54635A81ABB431E00021205 /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		F54635A91ABB431E00021205 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		F54635AA1ABB431E00021205 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		F54635AB1ABB431E00021205 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		F54635AC1ABB431E00021205 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		F54635AD1ABB431E00021205 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		F54635AE1ABB431E00021205 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		F54635AF1ABB431E00021205 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		F54635B01ABB431E00021205 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		F54635B11ABB431E00021205 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		F54635B21ABB431E00021205 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		F54635B31ABB431E00021205 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		F54635C61ABB449D00021205 /* KDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDConstants.h; path = Utilities/Constants/KDConstants.h; sourceTree = "<group>"; };
+		F54635C71ABB449D00021205 /* KDConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDConstants.m; path = Utilities/Constants/KDConstants.m; sourceTree = "<group>"; };
+		F54635CC1ABB452C00021205 /* NSString+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
+		F54635CD1ABB452C00021205 /* NSString+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
+		F54635D01ABB46B400021205 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		F54635D11ABB46B400021205 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
+		F5FE58EB1ABB50E2001AC11F /* KDKingdomDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDKingdomDetailsViewController.h; path = "View Controllers/Kingdom Details/KDKingdomDetailsViewController.h"; sourceTree = "<group>"; };
+		F5FE58EC1ABB50E2001AC11F /* KDKingdomDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDKingdomDetailsViewController.m; path = "View Controllers/Kingdom Details/KDKingdomDetailsViewController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F54635581ABB35DB00021205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F54635711ABB35DB00021205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F52B78D81ABC96AF00750222 /* Activity View */ = {
+			isa = PBXGroup;
+			children = (
+				F52B78D91ABC96AF00750222 /* KDActivityView.h */,
+				F52B78DA1ABC96AF00750222 /* KDActivityView.m */,
+				F52B78DB1ABC96AF00750222 /* KDActivityView.xib */,
+			);
+			name = "Activity View";
+			path = "Utilities/Activity View";
+			sourceTree = "<group>";
+		};
+		F52B78E11ABC9A9000750222 /* User Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				F52B78DE1ABC9A8B00750222 /* KDUserDefaults.h */,
+				F52B78DF1ABC9A8B00750222 /* KDUserDefaults.m */,
+			);
+			name = "User Defaults";
+			sourceTree = "<group>";
+		};
+		F54635521ABB35DB00021205 = {
+			isa = PBXGroup;
+			children = (
+				F546355D1ABB35DB00021205 /* Kingdom */,
+				F54635771ABB35DB00021205 /* KingdomTests */,
+				F546355C1ABB35DB00021205 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F546355C1ABB35DB00021205 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F546355B1ABB35DB00021205 /* Kingdom.app */,
+				F54635741ABB35DB00021205 /* KingdomTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F546355D1ABB35DB00021205 /* Kingdom */ = {
+			isa = PBXGroup;
+			children = (
+				F54635621ABB35DB00021205 /* AppDelegate.h */,
+				F54635631ABB35DB00021205 /* AppDelegate.m */,
+				F54635681ABB35DB00021205 /* Main.storyboard */,
+				F54635D31ABB488D00021205 /* Login */,
+				F54635C51ABB432400021205 /* Kingdom List */,
+				F54635C91ABB44A100021205 /* Utilties */,
+				F546358D1ABB431E00021205 /* Networking */,
+				F546356B1ABB35DB00021205 /* Images.xcassets */,
+				F546356D1ABB35DB00021205 /* LaunchScreen.xib */,
+				F546355E1ABB35DB00021205 /* Supporting Files */,
+			);
+			path = Kingdom;
+			sourceTree = "<group>";
+		};
+		F546355E1ABB35DB00021205 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F54635841ABB396E00021205 /* Images */,
+				F546355F1ABB35DB00021205 /* Info.plist */,
+				F54635601ABB35DB00021205 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F54635771ABB35DB00021205 /* KingdomTests */ = {
+			isa = PBXGroup;
+			children = (
+				F546357A1ABB35DB00021205 /* KingdomTests.m */,
+				F54635781ABB35DB00021205 /* Supporting Files */,
+			);
+			path = KingdomTests;
+			sourceTree = "<group>";
+		};
+		F54635781ABB35DB00021205 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F54635791ABB35DB00021205 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F54635841ABB396E00021205 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F54635851ABB396E00021205 /* logo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		F546358D1ABB431E00021205 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F546358E1ABB431E00021205 /* AFNetworking */,
+				F54635A21ABB431E00021205 /* UIKit+AFNetworking */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F546358E1ABB431E00021205 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				F546358F1ABB431E00021205 /* AFHTTPRequestOperation.h */,
+				F54635901ABB431E00021205 /* AFHTTPRequestOperation.m */,
+				F54635911ABB431E00021205 /* AFHTTPRequestOperationManager.h */,
+				F54635921ABB431E00021205 /* AFHTTPRequestOperationManager.m */,
+				F54635931ABB431E00021205 /* AFHTTPSessionManager.h */,
+				F54635941ABB431E00021205 /* AFHTTPSessionManager.m */,
+				F54635951ABB431E00021205 /* AFNetworking.h */,
+				F54635961ABB431E00021205 /* AFNetworkReachabilityManager.h */,
+				F54635971ABB431E00021205 /* AFNetworkReachabilityManager.m */,
+				F54635981ABB431E00021205 /* AFSecurityPolicy.h */,
+				F54635991ABB431E00021205 /* AFSecurityPolicy.m */,
+				F546359A1ABB431E00021205 /* AFURLConnectionOperation.h */,
+				F546359B1ABB431E00021205 /* AFURLConnectionOperation.m */,
+				F546359C1ABB431E00021205 /* AFURLRequestSerialization.h */,
+				F546359D1ABB431E00021205 /* AFURLRequestSerialization.m */,
+				F546359E1ABB431E00021205 /* AFURLResponseSerialization.h */,
+				F546359F1ABB431E00021205 /* AFURLResponseSerialization.m */,
+				F54635A01ABB431E00021205 /* AFURLSessionManager.h */,
+				F54635A11ABB431E00021205 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		F54635A21ABB431E00021205 /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				F54635A31ABB431E00021205 /* AFNetworkActivityIndicatorManager.h */,
+				F54635A41ABB431E00021205 /* AFNetworkActivityIndicatorManager.m */,
+				F54635A51ABB431E00021205 /* UIActivityIndicatorView+AFNetworking.h */,
+				F54635A61ABB431E00021205 /* UIActivityIndicatorView+AFNetworking.m */,
+				F54635A71ABB431E00021205 /* UIAlertView+AFNetworking.h */,
+				F54635A81ABB431E00021205 /* UIAlertView+AFNetworking.m */,
+				F54635A91ABB431E00021205 /* UIButton+AFNetworking.h */,
+				F54635AA1ABB431E00021205 /* UIButton+AFNetworking.m */,
+				F54635AB1ABB431E00021205 /* UIImageView+AFNetworking.h */,
+				F54635AC1ABB431E00021205 /* UIImageView+AFNetworking.m */,
+				F54635AD1ABB431E00021205 /* UIKit+AFNetworking.h */,
+				F54635AE1ABB431E00021205 /* UIProgressView+AFNetworking.h */,
+				F54635AF1ABB431E00021205 /* UIProgressView+AFNetworking.m */,
+				F54635B01ABB431E00021205 /* UIRefreshControl+AFNetworking.h */,
+				F54635B11ABB431E00021205 /* UIRefreshControl+AFNetworking.m */,
+				F54635B21ABB431E00021205 /* UIWebView+AFNetworking.h */,
+				F54635B31ABB431E00021205 /* UIWebView+AFNetworking.m */,
+			);
+			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		F54635C51ABB432400021205 /* Kingdom List */ = {
+			isa = PBXGroup;
+			children = (
+				F54635871ABB418E00021205 /* KDKingdomListViewController.h */,
+				F54635881ABB418E00021205 /* KDKingdomListViewController.m */,
+				F546358A1ABB41D700021205 /* KDKingdomTableViewCell.h */,
+				F546358B1ABB41D700021205 /* KDKingdomTableViewCell.m */,
+				F5FE58EE1ABB50F7001AC11F /* Kingdom Details */,
+			);
+			name = "Kingdom List";
+			sourceTree = "<group>";
+		};
+		F54635C91ABB44A100021205 /* Utilties */ = {
+			isa = PBXGroup;
+			children = (
+				F52B78D81ABC96AF00750222 /* Activity View */,
+				F54635CF1ABB46B400021205 /* AsyncImageView */,
+				F54635CB1ABB452C00021205 /* NSStrings + Extensions */,
+				F54635CA1ABB44AA00021205 /* Constants */,
+				F52B78E11ABC9A9000750222 /* User Defaults */,
+			);
+			name = Utilties;
+			sourceTree = "<group>";
+		};
+		F54635CA1ABB44AA00021205 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F54635C61ABB449D00021205 /* KDConstants.h */,
+				F54635C71ABB449D00021205 /* KDConstants.m */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		F54635CB1ABB452C00021205 /* NSStrings + Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F54635CC1ABB452C00021205 /* NSString+Extensions.h */,
+				F54635CD1ABB452C00021205 /* NSString+Extensions.m */,
+			);
+			name = "NSStrings + Extensions";
+			path = "Utilities/NSStrings + Extensions";
+			sourceTree = "<group>";
+		};
+		F54635CF1ABB46B400021205 /* AsyncImageView */ = {
+			isa = PBXGroup;
+			children = (
+				F54635D01ABB46B400021205 /* AsyncImageView.h */,
+				F54635D11ABB46B400021205 /* AsyncImageView.m */,
+			);
+			name = AsyncImageView;
+			path = Utilities/AsyncImageView;
+			sourceTree = "<group>";
+		};
+		F54635D31ABB488D00021205 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F54635651ABB35DB00021205 /* KDLoginViewController.h */,
+				F54635661ABB35DB00021205 /* KDLoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		F5FE58EE1ABB50F7001AC11F /* Kingdom Details */ = {
+			isa = PBXGroup;
+			children = (
+				F5FE58EB1ABB50E2001AC11F /* KDKingdomDetailsViewController.h */,
+				F5FE58EC1ABB50E2001AC11F /* KDKingdomDetailsViewController.m */,
+				F52B78D51ABC91AF00750222 /* KDQuestDetailsTableViewCell.h */,
+				F52B78D61ABC91AF00750222 /* KDQuestDetailsTableViewCell.m */,
+			);
+			name = "Kingdom Details";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F546355A1ABB35DB00021205 /* Kingdom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F546357E1ABB35DB00021205 /* Build configuration list for PBXNativeTarget "Kingdom" */;
+			buildPhases = (
+				F54635571ABB35DB00021205 /* Sources */,
+				F54635581ABB35DB00021205 /* Frameworks */,
+				F54635591ABB35DB00021205 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kingdom;
+			productName = Kingdom;
+			productReference = F546355B1ABB35DB00021205 /* Kingdom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F54635731ABB35DB00021205 /* KingdomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F54635811ABB35DB00021205 /* Build configuration list for PBXNativeTarget "KingdomTests" */;
+			buildPhases = (
+				F54635701ABB35DB00021205 /* Sources */,
+				F54635711ABB35DB00021205 /* Frameworks */,
+				F54635721ABB35DB00021205 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F54635761ABB35DB00021205 /* PBXTargetDependency */,
+			);
+			name = KingdomTests;
+			productName = KingdomTests;
+			productReference = F54635741ABB35DB00021205 /* KingdomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F54635531ABB35DB00021205 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					F546355A1ABB35DB00021205 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					F54635731ABB35DB00021205 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = F546355A1ABB35DB00021205;
+					};
+				};
+			};
+			buildConfigurationList = F54635561ABB35DB00021205 /* Build configuration list for PBXProject "Kingdom" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F54635521ABB35DB00021205;
+			productRefGroup = F546355C1ABB35DB00021205 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F546355A1ABB35DB00021205 /* Kingdom */,
+				F54635731ABB35DB00021205 /* KingdomTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F54635591ABB35DB00021205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54635861ABB396E00021205 /* logo.png in Resources */,
+				F546356A1ABB35DB00021205 /* Main.storyboard in Resources */,
+				F546356F1ABB35DB00021205 /* LaunchScreen.xib in Resources */,
+				F52B78DD1ABC96AF00750222 /* KDActivityView.xib in Resources */,
+				F546356C1ABB35DB00021205 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F54635721ABB35DB00021205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F54635571ABB35DB00021205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54635B91ABB431E00021205 /* AFURLConnectionOperation.m in Sources */,
+				F54635B41ABB431E00021205 /* AFHTTPRequestOperation.m in Sources */,
+				F54635C01ABB431E00021205 /* UIButton+AFNetworking.m in Sources */,
+				F54635CE1ABB452C00021205 /* NSString+Extensions.m in Sources */,
+				F54635B71ABB431E00021205 /* AFNetworkReachabilityManager.m in Sources */,
+				F54635C21ABB431E00021205 /* UIProgressView+AFNetworking.m in Sources */,
+				F52B78E01ABC9A8B00750222 /* KDUserDefaults.m in Sources */,
+				F54635BC1ABB431E00021205 /* AFURLSessionManager.m in Sources */,
+				F52B78DC1ABC96AF00750222 /* KDActivityView.m in Sources */,
+				F54635BA1ABB431E00021205 /* AFURLRequestSerialization.m in Sources */,
+				F54635671ABB35DB00021205 /* KDLoginViewController.m in Sources */,
+				F54635C31ABB431E00021205 /* UIRefreshControl+AFNetworking.m in Sources */,
+				F54635BB1ABB431E00021205 /* AFURLResponseSerialization.m in Sources */,
+				F54635D21ABB46B400021205 /* AsyncImageView.m in Sources */,
+				F546358C1ABB41D700021205 /* KDKingdomTableViewCell.m in Sources */,
+				F54635C11ABB431E00021205 /* UIImageView+AFNetworking.m in Sources */,
+				F54635641ABB35DB00021205 /* AppDelegate.m in Sources */,
+				F54635BF1ABB431E00021205 /* UIAlertView+AFNetworking.m in Sources */,
+				F5FE58ED1ABB50E2001AC11F /* KDKingdomDetailsViewController.m in Sources */,
+				F54635B51ABB431E00021205 /* AFHTTPRequestOperationManager.m in Sources */,
+				F52B78D71ABC91AF00750222 /* KDQuestDetailsTableViewCell.m in Sources */,
+				F54635B81ABB431E00021205 /* AFSecurityPolicy.m in Sources */,
+				F54635C41ABB431E00021205 /* UIWebView+AFNetworking.m in Sources */,
+				F54635611ABB35DB00021205 /* main.m in Sources */,
+				F54635891ABB418E00021205 /* KDKingdomListViewController.m in Sources */,
+				F54635B61ABB431E00021205 /* AFHTTPSessionManager.m in Sources */,
+				F54635BE1ABB431E00021205 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				F54635C81ABB449D00021205 /* KDConstants.m in Sources */,
+				F54635BD1ABB431E00021205 /* AFNetworkActivityIndicatorManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F54635701ABB35DB00021205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F546357B1ABB35DB00021205 /* KingdomTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F54635761ABB35DB00021205 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F546355A1ABB35DB00021205 /* Kingdom */;
+			targetProxy = F54635751ABB35DB00021205 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F54635681ABB35DB00021205 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F54635691ABB35DB00021205 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F546356D1ABB35DB00021205 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F546356E1ABB35DB00021205 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F546357C1ABB35DB00021205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F546357D1ABB35DB00021205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F546357F1ABB35DB00021205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Kingdom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F54635801ABB35DB00021205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Kingdom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F54635821ABB35DB00021205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KingdomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kingdom.app/Kingdom";
+			};
+			name = Debug;
+		};
+		F54635831ABB35DB00021205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KingdomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kingdom.app/Kingdom";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F54635561ABB35DB00021205 /* Build configuration list for PBXProject "Kingdom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F546357C1ABB35DB00021205 /* Debug */,
+				F546357D1ABB35DB00021205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F546357E1ABB35DB00021205 /* Build configuration list for PBXNativeTarget "Kingdom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F546357F1ABB35DB00021205 /* Debug */,
+				F54635801ABB35DB00021205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F54635811ABB35DB00021205 /* Build configuration list for PBXNativeTarget "KingdomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F54635821ABB35DB00021205 /* Debug */,
+				F54635831ABB35DB00021205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F54635531ABB35DB00021205 /* Project object */;
+}
