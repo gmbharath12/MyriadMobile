@@ -84,6 +84,9 @@
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
         [[AppDelegate sharedAppDelegate] stopAnimating];
+        [[[UIAlertView alloc] initWithTitle:kAppName message:@" Internal Server Error. Please try again later!" delegate:nil 
+        cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil] show];
+        return;
         
     }];
     
